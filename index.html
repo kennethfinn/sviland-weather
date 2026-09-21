@@ -13,8 +13,8 @@
   <meta property="og:title" content="Sviland - DidWell Weather Services – værmelding">
   <meta property="og:description" content="Oppdatert værmelding for Sviland basert på ni værmodeller.">
   <meta property="og:url" content="https://sviland.didwell.no/">
-  <meta property="og:image" content="https://sviland.didwell.no/og-sviland.jpg?v=1">
-  <meta property="og:image:secure_url" content="https://sviland.didwell.no/og-sviland.jpg?v=1">
+  <meta property="og:image" content="https://sviland.didwell.no/og-sviland-v2.jpg?v=2">
+  <meta property="og:image:secure_url" content="https://sviland.didwell.no/og-sviland-v2.jpg?v=2">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -23,7 +23,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Sviland - DidWell Weather Services – værmelding">
   <meta name="twitter:description" content="Oppdatert værmelding for Sviland basert på ni værmodeller.">
-  <meta name="twitter:image" content="https://sviland.didwell.no/og-sviland.jpg?v=1">
+  <meta name="twitter:image" content="https://sviland.didwell.no/og-sviland-v2.jpg?v=2">
   <title>Sviland - DidWell Weather Services</title>
   <style>
     :root{
@@ -197,7 +197,7 @@
   <header>
     <div>
       <h1>Sviland - DidWell Weather Services</h1>
-      <div id="locationSub" class="sub">58,83352°N · 5,81755°E · høyde hentes · 7 døgn · v1.28 · oppdateres automatisk når siden åpnes</div>
+      <div id="locationSub" class="sub">58,83352°N · 5,81755°E · høyde hentes · 7 døgn · v1.29 · oppdateres automatisk når siden åpnes</div>
     </div>
     <div class="actions">
       <button id="refreshBtn" type="button">Oppdater</button>
@@ -655,7 +655,7 @@
 
     const elevation = Number(data.elevation);
     if(finite(elevation)){
-      $('locationSub').textContent = `58,83352°N · 5,81755°E · ${Math.round(elevation)} moh. · 7 døgn · v1.28 · oppdateres automatisk når siden åpnes`;
+      $('locationSub').textContent = `58,83352°N · 5,81755°E · ${Math.round(elevation)} moh. · 7 døgn · v1.29 · oppdateres automatisk når siden åpnes`;
     }
 
     const current = data.current || {};
